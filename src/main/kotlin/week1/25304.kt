@@ -13,12 +13,6 @@ fun main() {
             sum += money * m
         }
 
-        when {
-            total == sum ->
-                println("Yes")
-
-            else ->
-                println("No")
-        }
+        println(if (total == sum) "Yes" else "No")
     }
 }

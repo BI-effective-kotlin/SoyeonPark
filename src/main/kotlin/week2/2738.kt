@@ -22,10 +22,7 @@ fun main() {
         }
 
         for (i in 0 until n) {
-            for (j in 0 until m) {
-                print("${mat[i][j]} ")
-            }
-            println()
+            println(mat[i].joinToString(" "))
         }
     }
 }

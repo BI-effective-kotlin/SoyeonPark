@@ -11,10 +11,10 @@ fun main() {
         isPrime[1] = false
 
         for (i in 2..sqrt(n.toDouble()).toInt()) {
-            if (!isPrime[i]) continue
-
-            for (j in i * i..n step i) {
-                isPrime[j] = false
+            if (isPrime[i]) {
+                for (j in i * i..n step i) {
+                    isPrime[j] = false
+                }
             }
         }
 
